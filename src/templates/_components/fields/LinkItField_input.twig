@@ -1,0 +1,34 @@
+<div class="link-it-wrapper" id="{{ defaultLink.id }}">
+    <div class="link-it-sortable">
+    {% for link in links %}
+        {% include 'link-it/_components/fields/LinkItField_input_single' with {
+            'name' : link.name,
+            'value' : link.value,
+            'field' : link.field,
+            'id' : link.id,
+            'namespacedId' : link.namespacedId,
+            'settings' : link.settings,
+            'types' : link.types,
+            'elementSelectSettings' : link.elementSelectSettings,
+            'jsCode' : link.jsCode,
+            'key' : link.key
+        } %}
+    {% endfor %}
+
+
+    {% if links | length == 0 %}
+        {% include 'link-it/_components/fields/LinkItField_input_single' with {
+            'name' : defaultLink.name,
+            'value' : defaultLink.value,
+            'field' : defaultLink.field,
+            'id' : defaultLink.id,
+            'namespacedId' : defaultLink.namespacedId,
+            'settings' : defaultLink.settings,
+            'types' : defaultLink.types,
+            'elementSelectSettings' : defaultLink.elementSelectSettings,
+            'jsCode' : defaultLink.jsCode,
+        } %}
+    {% endif %}
+    </div>
+    <div class="link-it-add" data-max="{{ defaultLink.settings.max }}" data-namespaced-id="{{ defaultLink.namespacedId }}"><div class="add icon"></div></div>
+</div>

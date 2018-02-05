@@ -1,0 +1,89 @@
+/**
+ * Link It plugin for Craft CMS
+ *
+ * LinkItField Field CSS
+ *
+ * @author    Simple Integrated Marketing
+ * @copyright Copyright (c) 2018 Simple Integrated Marketing
+ * @link      https://simple.com.au
+ * @package   LinkIt
+ * @since     1.0.0
+ */
+.fruit-field {
+    overflow: hidden;
+    padding: 15px 10px 15px 40px;
+    margin-top: 10px;
+    background-color:#eef0f1;
+    position: relative;
+    border-radius: 5px;
+}
+.fruit-field .fruit-field-delete {
+    font-family: monospace;
+    position: absolute;
+    width:20px;
+    height:20px;
+    font-size:16px;
+    top:0;
+    right:0;
+    cursor:pointer;
+    color:red;
+    z-index:10;
+}
+.fruit-field .move {
+    position: absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+}
+.fruit-field-column {
+    width: 50%;
+    float:left;
+}
+.fruit-field-column:first-child div {
+    padding-right: 10px;
+}
+.fruit-field-column .checkboxfield {
+    padding-top: 5px;
+}
+.fruitlinkit {}
+.fruitlinkit-type {
+    float:left;
+    margin-right: 10px;
+}
+.fruitlinkit-type select { max-width: 130px; }
+.fruitlinkit-options {
+    float:left;
+}
+
+.fruitlinkit-options .input .elementselect .element {
+    margin: 0;
+}
+.fruitlinkit-settings {
+    clear:both;
+    padding-top: 10px;
+}
+.link-it-wrapper {
+    position:relative;
+}
+.link-it-wrapper .link-it-add {
+    position:absolute;
+    height:40px;
+    width:40px;
+    font-size:20px;
+    border-radius:999px;
+    bottom:-20px;
+    right:30px;
+    border:2px solid #e3e5e8;
+    background:white;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
+    transition:all 0.5s;
+    z-index:10;
+}
+.link-it-wrapper .link-it-add:hover {
+    background:#f0f0f0;
+}
+

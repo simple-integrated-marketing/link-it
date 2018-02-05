@@ -1,0 +1,44 @@
+{
+    "name": "simple-team/link-it",
+    "description": "Craft 3 port of the original Link It plugin",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "link it"
+    ],
+    "support": {
+        "docs": "https://github.com/bighoho123/link-it/blob/master/README.md",
+        "issues": "https://github.com/bighoho123/link-it/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simple Integrated Marketing",
+            "homepage": "https://simple.com.au"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "simpleteam\\linkit\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Link It",
+        "handle": "link-it",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/bighoho123/link-it/master/CHANGELOG.md",
+        "components": {
+            "linkItService": "simpleteam\\linkit\\services\\LinkItService"
+        },
+        "class": "simpleteam\\linkit\\LinkIt"
+    }
+}
