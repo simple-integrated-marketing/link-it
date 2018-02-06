@@ -246,6 +246,7 @@ class LinkItField extends Field
 
         Craft::$app->view->registerJs("addLinkItBlock = typeof addLinkItBlock == 'undefined'?{}:addLinkItBlock;");
         Craft::$app->view->registerJs("addLinkItBlock['{$namespacedId}'] = new AddLinkItBlock('{$namespacedId}',".json_encode($htmlAddNew).",".json_encode($jsAddNew).");");
+        Craft::$app->view->registerJs("$('.link-it-sortable').each(function(){Sortable.create(this,{handle:'.move.icon'});})");
 
 
 

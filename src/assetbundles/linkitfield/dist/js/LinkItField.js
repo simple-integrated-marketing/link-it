@@ -37,6 +37,12 @@
             this.$options = this.$optionsHolder.find('.fruitlinkit-option');
 
             this.addListener(this.$typeSelect, 'change', 'onChangeType');
+            // console.log($(".link-it-sortable"));
+            // $(".link-it-sortable").each(function(){
+            //     Sortable.create(this,{
+            //         handle:".move.icon"
+            //     });
+            // })
         },
 
         onChangeType: function(e)
@@ -100,10 +106,6 @@
         }
     })
 
-    $(".link-it-sortable").each(function(){
-        Sortable.create(this,{
-            handle:".move.icon"
-        });
-    })
+
 
 })(jQuery);
