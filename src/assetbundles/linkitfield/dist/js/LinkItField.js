@@ -102,8 +102,7 @@
 
     $(".link-it-sortable").each(function(){
         Sortable.create(this,{
-            handle:".move.icon",
-            disabled:true,
+            handle:".move.icon"
         });
     })
 
