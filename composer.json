@@ -2,7 +2,7 @@
     "name": "simple-team/link-it",
     "description": "Craft 3 port of the original Link It plugin",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
