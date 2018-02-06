@@ -23,11 +23,11 @@ To install the plugin, follow these instructions.
             }
         ]
 
-2. Then tell Composer to load the plugin:
+3. Then tell Composer to load the plugin:
 
         composer require "simple-team/link-it:dev-master"
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Link It.
+4. In the Control Panel, go to Settings → Plugins and click the “Install” button for Link It.
 
 
 Brought to you by [Simple Integrated Marketing](https://simple.com.au)
