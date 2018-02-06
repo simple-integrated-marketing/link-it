@@ -226,7 +226,7 @@ class LinkItModel extends Model
         {
             $id = is_array($this->value) ? $this->value[0] : false;
             $siteId = isset($this->siteId) ? $this->siteId : null;
-            if( $id && $asset = Craft::$app->assets->getFileById($id, $siteId) )
+            if( $id && $asset = Craft::$app->assets->getAssetById($id, $siteId) )
             {
                 $this->_asset = $asset;
             }
