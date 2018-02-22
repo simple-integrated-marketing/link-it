@@ -30,5 +30,7 @@
         } %}
     {% endif %}
     </div>
-    <div class="link-it-add" data-max="{{ defaultLink.settings.max }}" data-namespaced-id="{{ defaultLink.namespacedId }}"><div class="add icon"></div></div>
+    {% if not defaultLink.settings.max or defaultLink.settings.max > 1 %}
+        <div class="link-it-add" data-max="{{ defaultLink.settings.max }}" data-namespaced-id="{{ defaultLink.namespacedId }}"><div class="add icon"></div></div>
+    {% endif %}
 </div>
