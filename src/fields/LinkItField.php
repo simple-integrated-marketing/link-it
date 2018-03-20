@@ -98,7 +98,7 @@ class LinkItField extends Field
             return $value;
         }
         // From database
-        if( is_string($value) )
+        if( is_string($value) && is_array(json_decode($value, TRUE)))
         {
             $arrayOfValue = json_decode($value, TRUE);
             $settings = $this;
@@ -135,8 +135,7 @@ class LinkItField extends Field
             return $linkContainer;
         }
 
-
-
+        return new LinkItContainer();
     }
 
     /**
