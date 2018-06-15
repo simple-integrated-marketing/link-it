@@ -87,6 +87,6 @@
     background:#f0f0f0;
 }
 .sortable-ghost {
-    visibility: hidden;
+    opacity: 0;
 }
 
